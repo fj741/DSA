@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class GroupAnagrams {
     public static List<List<String>> groupAnagram(String[] strs){
-        HashMap<String, List<String>>map = new HashMap<>();
+        Map<String, List<String>>map = new HashMap<>();
 
         for(String s: strs){
             char c[] = s.toCharArray();
