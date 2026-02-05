@@ -14,17 +14,6 @@ public class ReverseLinkedList{
         return previous;
     }
 
-    public static void printNode(Node head){
-        while(head != null){
-            System.out.print(head.data);
-            if(head.next != null){
-                System.out.print(" -> ");
-            }
-            head = head.next;
-        }
-
-    }
-
 
     public static void main(String args[]){
         Node head = new Node(1);
@@ -34,7 +23,7 @@ public class ReverseLinkedList{
         head.next.next.next.next = new Node(5);
 
         Node result = reverseNode(head);
-        printNode(result);
+        result.printNode(result);
 
     }
 }
